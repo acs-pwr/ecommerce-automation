@@ -11,6 +11,14 @@ The main objective of this repository is to provide automated testing scripts fo
 - **Report**: Includes mechanisms to handle report after test execution in minio.
 - **Notification**: Includes mechanisms to handle notification after test execution in telegram bot.
 - **API**: Using API to execute automated test and can be further utilized for worker/cronjob usage.
+
+## Screenshot Feature
+- **Notification**
+![Alt text](screenshots-feature/telegram_notif.png)
+- **API**
+![Alt text](screenshots-feature/api.png)
+- **Report**
+![Alt text](screenshots-feature/file_report.png)
  
 ## Prerequisites
 - **Node.js**: Ensure Node.js is installed on your machine.
@@ -36,3 +44,4 @@ The main objective of this repository is to provide automated testing scripts fo
     #telegram-bot 
     BOT_TOKEN={token_telegram}
     CHAT_ID={chat_id_telegram}
+
