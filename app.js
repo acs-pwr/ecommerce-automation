@@ -10,19 +10,15 @@ app.post('/test-automation/run-test', (req, res) => {
     exec(`npm run test`, (error, stdout, stderr) => {
         if (error) {
             console.log(`ERROR_RUN_TEST: ${error.message}`);
-            // return res.status(500).send('Tests failed to complete.');
-            // sendNotification(`ERROR_RUN_TEST: ${error.message}`);
         }
         if (stderr) {
             console.log(`STDERR_RUN_TEST: ${stderr}`);
-            // sendNotification(`STDERR_RUN_TEST: ${stderr}`);
         }
         console.log(`stdout success npm run test : ${stdout}`);
 
         exec(`npm run upload`, (uploadError, uploadStdout, uploadStderr) => {
             if (uploadError) {
                 console.error(`exec error: ${uploadError}`);
-                // sendNotification(`exec upload error: ${uploadError}`);
             }
             console.log(`stdout: ${uploadStdout}`);
             

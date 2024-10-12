@@ -20,9 +20,9 @@ describe("Checkout Valid Product", () => {
     searchProduct(VALID_PRODUCT[0]);
     // 2. Wait and click first produk
     cy.get('[data-position="1"][data-available="1"] > .product-item-info > .details').first().click();
-    // 3. click first produk
+    // 3. click size
     cy.get('#option-label-size-558-item-16842').first().click();
-    // 4. click tambah ukuran
+    // 4. click detail produk
     cy.get('#product-addtocart-button').first().click();
     cy.wait(6000);
     // 5. validate number of product in cart

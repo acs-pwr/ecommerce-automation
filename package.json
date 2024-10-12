@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node app.js",
     "upload": "node cypress/support/upload-report.js",
-    "test": "./node_modules/.bin/cypress run --browser chrome --reporter mochawesome"
+    "test": "cypress run --browser chrome --reporter mochawesome --headless"
   },
   "author": "",
   "license": "ISC",
@@ -16,6 +16,7 @@
     "cypress-mochawesome-reporter": "^3.8.1",
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
+    "minio": "^8.0.1",
     "node-telegram-bot-api": "^0.66.0",
     "prettier": "^3.2.4"
   }
