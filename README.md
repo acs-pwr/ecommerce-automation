@@ -22,3 +22,17 @@ The main objective of this repository is to provide automated testing scripts fo
 1. Clone the repository:
    ```sh
    git clone https://github.com/acs-pwr/ecommerce-automation.git
+
+2. Create .env in repository:
+   ```sh
+    PORT= {port}
+    # minio
+    BUCKET_NAME= ecommerce-automation
+    STOREIO_DIRECTORY= develop/ecommerce-automation
+    ACCESS_KEY_MINIO=Q3AM3UQ867SPQQA43P2F
+    ACCESS_SECRET_MINIO=zuf+tfteSlswRu7BJ86wekitnifILbZam1KYY3TG
+    URL_MINIO=play.min.io
+    PORT_MINIO=9000
+    #telegram-bot 
+    BOT_TOKEN={token_telegram}
+    CHAT_ID={chat_id_telegram}
